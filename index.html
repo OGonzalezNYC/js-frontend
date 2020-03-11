@@ -15,18 +15,29 @@
     <h1>Say Your Prayers</h1>
     <div id="new-prayer-container">
       <form id="new-prayer-form">
-        <input type="text" />
-          <input type="submit" />
+        Title:  <input type="text" id="new-prayer-title" />
+        <br><br>
+        Prayer:  <input type="text" id="new-prayer-body"/>
+        <br><br>
+        Name:  <input type="text" id="new-prayer-user-name" />
+        <br><br>
+        Password:  <input type="text" id="new-prayer-user-password" />
+        <br>
+        <input type="submit" id="new-prayer-submit-button"/>
       </form>
     </div>
     <div id="prayers-container">
-
+          <!-- Each prayer must show a Title, a Body, a UserName, a form for adding an outcome (with the password), the number of Amens, and a form for incrementing Amens.  -->
     </div>
   </div>
-  <script src="src/index.js" />
-  <script src="src/adapters/PrayersAdapter.js" />
-  <script src="src/components.js" />
-  <script src="src/components/prayers.js" />
+  <script src="src/components/prayers.js"></script>
+  <script src="src/components/app.js"></script>
+  <script src="src/adapters/PrayersAdapter.js"></script>
+  <script src="src/index.js"></script>
+  
+
+
+
 
 
 </body>
