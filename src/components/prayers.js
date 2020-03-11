@@ -24,12 +24,18 @@ class Prayers {
   }
 
   render() {// We want to call this method after we get all the prayers.
+    //const prayersString = this.prayers.map(prayer => `<li>${prayer.title}</li>`).join('')
     //console.log('rendering...')// The fact that this console.log() works, means
+    //console.log(prayersString)// The fact that this console.log() is working means that the array of all prayers is reaching this far.
+    console.log(this.prayers[0])
     const prayersContainer = document.getElementById("prayers-container");
-    prayersContainer.innerHTML = 'my prayers here' // The fact that 'my prayers here' successfully populates the "prayers-container" div, means it's all working so far.
-    console.log('my prayers are', this.prayers)// The fact that this console.log() is working means that the array of all prayers is reaching this far.
-    prayersContainer.innerHTML = `
-    
-    `
+    //prayersContainer.innerHTML = 'my prayers here' // The fact that 'my prayers here' successfully
+    //populates the "prayers-container" div, means it's all working so far.
+
+    prayersContainer.innerHTML = //this.prayers.map(prayer => `<li>${prayer.title}</li>`).join('')
+
+    this.prayers.map(prayer => `<li><div>Title: ${prayer.title}</div><div>Prayer: ${prayer.body}</div><div><input type="submit" value="Amen" class="add-amen-button"/> ${prayer.amens}</div><div>Outcome: ${prayer.outcome}</div><input type="submit" value="Add Outcome" class="add-outcome-button"/></li>`).join('')
+    //Now I'll want to document.getElementsByClassName("add-amen-button") and document.getElementsByClassName("add-outcome-button"), and add an eventListener to each one.
+
   }
 }
