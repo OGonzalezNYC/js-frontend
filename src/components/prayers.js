@@ -37,5 +37,8 @@ class Prayers {
     this.prayers.map(prayer => `<li><div>Title: ${prayer.title}</div><div>Prayer: ${prayer.body}</div><div><input type="submit" value="Amen" class="add-amen-button"/> ${prayer.amens}</div><div>Outcome: ${prayer.outcome}</div><input type="submit" value="Add Outcome" class="add-outcome-button"/></li>`).join('')
     //Now I'll want to document.getElementsByClassName("add-amen-button") and document.getElementsByClassName("add-outcome-button"), and add an eventListener to each one.
 
+    //Datasets are for adding id's dynamically.
+    //data-id = prayer.id
+
   }
 }
